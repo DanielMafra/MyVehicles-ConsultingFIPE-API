@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quanto vale o meu veículo?</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="container top">
+    <img width="310px" src="assets/undraw_Vehicle_sale_a645.svg" alt="Veículos">
+    <h1>Quanto vale o meu veículo?</h1>
+  </div>
+
+  <div class="container vehicles">
+    <button onclick="choiceVehicle('carros')" class="vehicle"><i class="fas fa-car-side fa-2x"></i></button>
+    <button onclick="choiceVehicle('motos')" class="vehicle"><i class="fas fa-motorcycle fa-2x"></i></button>
+    <button onclick="choiceVehicle('caminhoes')" class="vehicle"><i class="fas fa-truck fa-2x"></i></button>
+  </div>
+
+  <div class="container form">
+    <form id="vehicle-form">
+      <label id="brand-label" class="hidden-element">
+        <h2>Marca</h2>
+      </label>
+      <select class="hidden-element" name="brand" id="brand-select">
+        <option value="">selecione</option>
+      </select>
+      <label id="model-label" class="hidden-element">
+        <h2>Modelo</h2>
+      </label>
+      <select class="hidden-element" name="model" id="model-select">
+        <option value="">selecione</option>
+      </select>
+      <label id="year-label" class="hidden-element">
+        <h2>Ano</h2>
+      </label>
+      <select class="hidden-element" name="year" id="year-select">
+        <option value="teste">selecione</option>
+      </select>
+      <input id="submit-button" class="submit hidden-element" type="submit" value="consultar">
+    </form>
+  </div>
+
+  <div id="result-area" class="container result hidden-element"></div>
+
+  <div id="loading-element" class="loading hidden-element"></div>
+  <div class="sloading"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
