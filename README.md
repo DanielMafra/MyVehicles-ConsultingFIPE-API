@@ -1,5 +1,5 @@
 # MyVehicles-ConsultingFIPE-API
-A web app for consulting FIPE API (list car price), created with HTML, CSS and Javascript.
+A web app for consulting FIPE API (list car price), created with HTML, CSS & Javascript.
 
 API used: https://parallelum.com.br/fipe/api/v1
 
